@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <h1>Your components go here</h1>
-    <Badge/>
+    <Badge color="red">its</Badge>
     </>
   )
 }

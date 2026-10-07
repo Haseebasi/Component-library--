@@ -1,11 +1,12 @@
 import React from "react"
-function Badge({color="grey"}){
-    return(
-        <div class="badge" style={{backgroundColor:"green",color:"white"}}>
-            <span>
-                Badge
+import chooseColor from "../hooks/chooseColor"
+function Badge({ color = "grey", children = "badge" }) {
+    return (
+        
+            <span className="badge" style={chooseColor(color)}>
+                {children}
             </span>
-        </div>
     )
 }
+
 export default Badge
