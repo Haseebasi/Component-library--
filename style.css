@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: Inter;
+    background-color: #E5E7EB;
 }
 
 .star {
@@ -131,13 +132,30 @@ font-weight: 500;
     border-radius: 12px;
 }
 
+
 .banner{
-    background-color: #ECFDF5;
-    color: #047857;
     padding: 1em;
     display: flex;
-
+    max-width: 826px;
 }
+.banner.congrats{
+    background-color: #ECFDF5;
+    color: #047857;
+}
+.banner.warning{
+    background-color: #FFFBEB;
+    color: #B45309;
+}
+.banner.error{
+    background-color: #FEF2F2;
+    color: #B45309;
+}
+.banner.info{
+    background-color: #EFF6FF;
+    color: #1C51B9;
+}
+
+
 .banner>div{
     margin-left:.5em;
 }
@@ -146,10 +164,10 @@ font-weight: 500;
     margin-top:.5em;
 }
 .banner>div>h1{
-    color: #065F46;
     font-size:16px;
     margin:0;
 }
+
 .card{
     position: relative;
     text-align: center;
@@ -180,9 +198,7 @@ font-weight: 500;
     transform: translateX(-50%);
     right: auto;
     bottom: auto;
-    background-color: #3F75FE;
     padding: .5em .5em;
-    color: white;
     z-index: 1;
     display: flex;
     justify-content: center;

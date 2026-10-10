@@ -1,14 +1,13 @@
 import React from "react"
-import { HiOutlineCloudUpload } from "react-icons/hi";
+import cardIconSelector from "./utils/cardIconSelector"
 
-function Card(){
+function Card({status,title,children}){
+    const cardIcon = cardIconSelector(status)
     return(
         <div className="card">
-            <div className="card-icon">
-                <HiOutlineCloudUpload />
-            </div>
-            <h1>Easy Deployment</h1>
-            <p>Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
+            {cardIcon}
+            <h1>{title}</h1>
+            <p>{children}</p>
         </div>
     )
 }
