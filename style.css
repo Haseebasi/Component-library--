@@ -205,4 +205,86 @@ font-weight: 500;
     align-items: center;
     font-size: 1.8rem;
     border-radius:10px ;
+
+}
+
+.testimonial{
+    background-color:#2545B8;
+    position: relative;
+    z-index: -2;
+    padding:20px ;
+    padding-top:170px ;
+    margin: 0;
+    margin-top: 100px;
+    width: 100%;
+    color: white;
+}
+.avatar-container{
+    position: absolute;
+    top:-100px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: auto;
+    width: 90%;
+    height: 250px;
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    z-index:1;
+    margin-right: 10%;
+    border-radius: 12px;
+}
+.testi-quote{
+    font-size: 35px;
+    color:#5C74CA;
+}
+.testimonial-contents{
+    display: flex;
+    flex-direction: column;
+
+}
+.testimonial-contents>p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.testimonial-contents>span{
+    line-height: 1.5;
+}
+.testimonial-contents>span.avatar-name{
+    font-weight: 700;
+}
+@media (min-width:600px){
+    .testimonial{
+        padding-top: 250px;
+    }
+
+    .avatar-container{
+        height: 300px;
+    }
+}
+@media (min-width: 750px) {
+    .testimonial {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 120px;
+        position: relative;
+    }
+
+    .avatar-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        height: 400px;
+        min-width: 350px;
+        margin-right: 40px;
+        margin-top: -120px;
+        margin-bottom: -120px;
+    }
+
+    
 }

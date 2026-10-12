@@ -1,5 +1,5 @@
 import React from "react"
-import cardIconSelector from "./utils/cardIconSelector"
+import cardIconSelector from "../utils/cardIconSelector"
 
 function Card({status,title,children}){
     const cardIcon = cardIconSelector(status)
