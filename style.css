@@ -208,7 +208,7 @@ font-weight: 500;
 
 }
 
-.testimonial{
+.testimonial1{
     background-color:#2545B8;
     position: relative;
     z-index: -2;
@@ -226,7 +226,7 @@ font-weight: 500;
     transform: translateX(-50%);
     right: auto;
     bottom: auto;
-    width: 90%;
+    width:400px;
     height: 250px;
     background-size: cover;
     background-position: center 30%;
@@ -247,15 +247,74 @@ font-weight: 500;
 .testimonial-contents>p{
     font-size: 18px;
     line-height: 1.5;
+    max-width: 800px;
 }
 .testimonial-contents>span{
     line-height: 1.5;
 }
-.testimonial-contents>span.avatar-name{
+span.avatar-name{
     font-weight: 700;
 }
+
+.testimonial2{
+    position: relative;
+    overflow: hidden;
+    background-color: #F9FAFB;
+    width: 100%;
+    padding: 4rem 1rem;
+    z-index: -2;
+}
+.testi-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.testi-logo{
+    height: 30px;
+    width: 100%;
+}
+.avatar-details{
+    color: #2E59F3;
+    font-size: 14px;
+    margin-top: 1.5em;
+    font-weight: 700;
+}
+.avatar-details>span.location{
+    color: #6B7280;
+    font-weight: 500;
+}
+.avatar-details>span.avatar-name{
+    font-weight: 500;
+    color: #111827;
+}
+.testimonial2>.disc{
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 800px;
+}
+.dot-pattern {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  width: 250px;  /* Adjust width of the dotted area */
+  height: 100%;  /* Adjust height as needed */
+  
+  /* Creates a grid of small dots */
+  background-image: radial-gradient(#e5e7eb 1.5px, transparent 1.5px);
+  background-size: 16px 16px; /* Spacing between dots */
+  
+  /* Optional: Soften edge opacity or fade effect */
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
 @media (min-width:600px){
-    .testimonial{
+    .testimonial1{
         padding-top: 250px;
     }
 
@@ -264,7 +323,7 @@ font-weight: 500;
     }
 }
 @media (min-width: 750px) {
-    .testimonial {
+    .testimonial1 {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -285,6 +344,13 @@ font-weight: 500;
         margin-top: -120px;
         margin-bottom: -120px;
     }
-
-    
+    .testimonial2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+    .testimonial2>p.avatar-details{
+        padding: 0;
+    }
 }
