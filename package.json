@@ -6,11 +6,13 @@
   "author": "haseeb",
   "type": "commonjs",
   "main": "vite.config.js",
+  "homepage": "https://<your-github-username>.github.io/component-library",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -21,6 +23,7 @@
     "vite": "latest"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*"
+    "@vitejs/plugin-react": "*",
+    "gh-pages": "^6.3.0"
   }
 }

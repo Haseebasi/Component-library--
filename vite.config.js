@@ -1,8 +1,9 @@
-import {defineConfig} from "vite"
+import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
 
 export default defineConfig({
-	plugins: [
-		react()
-	]
+    base: "/component-library/", // Required so GitHub Pages finds your compiled JS/CSS paths
+    plugins: [
+        react()
+    ]
 })
